@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multirubro El Progreso - Registro de Ventas</title>
+    <!-- Vinculamos el CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera principal -->
+    <header class="cabecera-sitio">
+        <img src="logo.png" 
+             alt="Logotipo de Multirubro El Progreso" 
+             title="Logo del comercio" 
+             style="border: 1px solid #ffffff; background-color: #ffffff; padding: 2px; width: 50px; height: 50px; vertical-align: middle; margin-right: 10px;">
+        <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Multirubro El Progreso</h1>
+    </header>
+
+    <!-- Menu con la pestaña actual de ventas activa -->
+    <nav class="menu-sitio">
+        <a href="index.html">Inicio</a>
+        <a href="gestion.html">Gestion de Stock</a>
+        <a class="pagina-actual" href="ventas.html">Registro de Ventas</a>
+    </nav>
+
+    <!-- Seccion de tablas e informes -->
+    <main class="contenido-sitio">
+        <h2 class="titulo-principal">Historial de Ventas</h2>
+        
+        <!-- Tabla clasica con bordes para ver el historial -->
+        <table class="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Total Cobrado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>15/04/2026</td><td>Alfajor Triple</td><td>2 un.</td><td>$2200</td></tr>
+                <tr><td>15/04/2026</td><td>Cuaderno Rayado 84 hojas</td><td>1 un.</td><td>$2800</td></tr>
+                <tr><td>16/04/2026</td><td>Lapicera Azul Basica</td><td>3 un.</td><td>$1500</td></tr>
+                <tr><td>16/04/2026</td><td>Taza de Ceramica comun</td><td>1 un.</td><td>$4500</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Seccion obligatoria de cuentas pendientes o fiado -->
+        <h2 class="titulo-principal" style="margin-top: 30px;">Pagos a Cuenta (Libreta de Fiado)</h2>
+        <p>Clientes vecinales que tienen cuenta abierta y deben pagar:</p>
+        
+        <!-- Contenedor con las tarjetas deudoras organizadas por Flexbox -->
+        <div class="grupo-deudores">
+            <div class="tarjeta-deudora">
+                <h3>Carlos Gomez</h3>
+                <p class="deuda-monto">Debe: $3500</p>
+                <p><strong>Detalle:</strong> Se llevo un cuaderno escolar de 84 hojas y una goma de borrar el dia lunes.</p>
+            </div>
+            
+            <div class="tarjeta-deudora" style="background-color: #ffebd6; border-color: #ff9900;">
+                <h3 style="color: #b35c00;">Laura Martinez</h3>
+                <p class="deuda-monto" style="color: #b35c00;">Debe: $1400</p>
+                <p><strong>Detalle:</strong> Quedo pendiente de pago una gaseosa cola de 500ml y un chupetin de cereza.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="pie-sitio">
+        <p>Copyright 2026 Multirubro El Progreso - Hecho para Laboratorio de Programacion - 6 G</p>
+    </footer>
+
+</body>
+</html>
