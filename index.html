@@ -1,0 +1,95 @@
+<!-- 
+  TRABAJO PRACTICO NUMERO 3 - LABORATORIO DE PROGRAMACION
+  ESTUDIANTE: [Tu Nombre y Apellido]
+  CURSO: 6 G
+  ARCHIVO: index.html (Página de inicio y tabla de 15 productos)
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multirubro El Progreso - Inicio</title>
+    <!-- Vinculamos la hoja de estilo externa obligatoria -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera de la pagina con logo e informacion -->
+    <header class="cabecera-sitio">
+        <!-- Imagen local como pide la consigna con atributos alt, title y style inline -->
+        <img src="logo.png" 
+             alt="Logotipo de Multirubro El Progreso" 
+             title="Logo del comercio" 
+             style="border: 1px solid #ffffff; background-color: #ffffff; padding: 2px; width: 50px; height: 50px; vertical-align: middle; margin-right: 10px;">
+        <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Multirubro El Progreso</h1>
+    </header>
+
+    <!-- Menu de navegacion obligatorio -->
+    <nav class="menu-sitio">
+        <a class="pagina-actual" href="index.html">Inicio</a>
+        <a href="gestion.html">Gestion de Stock</a>
+        <a href="ventas.html">Registro de Ventas</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenido-sitio">
+        
+        <!-- Seccion de rubros organizada usando Flexbox en el CSS -->
+        <section class="bloque-rubros">
+            <div class="caja-categoria rubro-k">
+                <h3>Kiosco</h3>
+                <p>Venta de golosinas, bebidas frescas, alfajores y articulos comestibles rapidos para el dia.</p>
+            </div>
+            <div class="caja-categoria rubro-l">
+                <h3>Libreria</h3>
+                <p>Articulos para el colegio, cuadernos, carpetas, repuestos de hojas y lapiceras varias.</p>
+            </div>
+            <div class="caja-categoria rubro-r">
+                <h3>Regaleria</h3>
+                <p>Regalos para cumpleanos, tazas de ceramica, portarretratos y peluches para regalar.</p>
+            </div>
+        </section>
+
+        <!-- Tabla con los 15 productos requeridos (5 por rubro) -->
+        <h2 class="titulo-principal">Nuestros Productos en Stock</h2>
+        <table class="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Nombre del Producto</th>
+                    <th>Categoria de Rubro</th>
+                    <th>Precio Unitario</th>
+                    <th>Stock Disponible</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rubro Kiosco -->
+                <tr><td>Alfajor Triple</td><td>Kiosco</td><td>$1100</td><td>32 un.</td></tr>
+                <tr><td>Gaseosa Cola 500ml</td><td>Kiosco</td><td>$1400</td><td>18 un.</td></tr>
+                <tr><td>Chupetin sabor Frutilla</td><td>Kiosco</td><td>$250</td><td>100 un.</td></tr>
+                <tr><td>Papas Fritas Copetin</td><td>Kiosco</td><td>$1200</td><td>15 un.</td></tr>
+                <tr><td>Turron de Mani</td><td>Kiosco</td><td>$350</td><td>45 un.</td></tr>
+                <!-- Rubro Libreria -->
+                <tr><td>Cuaderno Rayado 84 hojas</td><td>Libreria</td><td>$2800</td><td>25 un.</td></tr>
+                <tr><td>Lapicera Azul Basica</td><td>Libreria</td><td>$500</td><td>50 un.</td></tr>
+                <tr><td>Regla de Plastico 30cm</td><td>Libreria</td><td>$700</td><td>12 un.</td></tr>
+                <tr><td>Goma de Borrar lapiz/tinta</td><td>Libreria</td><td>$300</td><td>30 un.</td></tr>
+                <tr><td>Lapiz Negro Grafito</td><td>Libreria</td><td>$400</td><td>40 un.</td></tr>
+                <!-- Rubro Regaleria -->
+                <tr><td>Taza de Ceramica comun</td><td>Regaleria</td><td>$4500</td><td>8 un.</td></tr>
+                <tr><td>Oso de Peluche chico</td><td>Regaleria</td><td>$8900</td><td>5 un.</td></tr>
+                <tr><td>Portarretrato de Madera 10x15</td><td>Regaleria</td><td>$3200</td><td>10 un.</td></tr>
+                <tr><td>Llavero Metalico simple</td><td>Regaleria</td><td>$1500</td><td>20 un.</td></tr>
+                <tr><td>Vela Aromatica en vaso</td><td>Regaleria</td><td>$2600</td><td>14 un.</td></tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <!-- Pie de pagina del TP -->
+    <footer class="pie-sitio">
+        <p>Copyright 2026 Multirubro El Progreso - Hecho para Laboratorio de Programacion - 6 G</p>
+    </footer>
+
+</body>
+</html>
