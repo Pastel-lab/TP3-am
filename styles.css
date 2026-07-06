@@ -1,0 +1,192 @@
+/* 1. CONFIGURACION GENERAL DE LA PAGINA */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra legible */
+    background-color: #e5e5e5;      /* Gris clasico para el fondo */
+    color: #000000;                 /* Letras en negro directo */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. ESTILO DE LA CABECERA (HEADER) */
+.cabecera-sitio {
+    background-color: #000080;      /* Azul marino basico */
+    color: #ffffff;                 /* Texto blanco para leer bien */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #000000; /* Borde negro para separar */
+}
+
+/* 3. MENU DE LINKS (NAV) */
+.menu-sitio {
+    background-color: #333333;      /* Gris oscuro */
+    padding: 8px;
+    text-align: center;
+}
+
+.menu-sitio a {
+    color: #ffffff;                 /* Letras blancas */
+    text-decoration: none;          /* Saco el subrayado por defecto */
+    font-weight: bold;              /* Texto en negrita */
+    margin: 0 10px;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+}
+
+/* Cambio de color cuando el cursor pasa arriba */
+.menu-sitio a:hover {
+    background-color: #555555;      /* Cambia a gris claro */
+    border: 1px solid #ffffff;      /* Le pone un recuadro blanco */
+}
+
+/* Color para saber que pagina esta abierta */
+.menu-sitio a.pagina-actual {
+    background-color: #28a745;      /* Color verde */
+    border: 1px solid #000000;
+}
+
+/* 4. BLOQUE PRINCIPAL */
+.contenido-sitio {
+    background-color: #ffffff;      /* Caja blanca para los contenidos */
+    max-width: 800px;               /* Ancho maximo de la pagina */
+    margin: 20px auto;              /* Centra la hoja blanca en la pantalla */
+    padding: 20px;
+    border: 1px solid #999999;      /* Borde gris alrededor */
+}
+
+.titulo-principal {
+    color: #000080;                 /* Titulos en color azul */
+    border-bottom: 2px solid #000080; /* Linea divisoria azul */
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* 5. FLEXBOX PARA LA SECCION DE RUBROS (Punto obligatorio de la consigna) */
+.bloque-rubros {
+    display: flex;                  /* Habilita flexbox */
+    gap: 10px;                      /* Espacio de separacion entre cajas */
+    margin-bottom: 25px;
+}
+
+.caja-categoria {
+    flex: 1;                        /* Todas las cajas ocupan el mismo ancho */
+    padding: 12px;
+    border: 1px solid #000000;      /* Recuadro negro simple */
+}
+
+/* Colores de fondo basicos para cada rubro */
+.rubro-k { background-color: #ffffe0; } /* Amarillo Kiosco */
+.rubro-l { background-color: #e6f2ff; } /* Celeste Libreria */
+.rubro-r { background-color: #ffe6e6; } /* Rosa Regaleria */
+
+.caja-categoria h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.caja-categoria p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* 6. TABLA CLASICA PARA LOS LISTADOS */
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;      /* Junta los bordes para que no queden dobles */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tabla-productos th {
+    background-color: #000080;      /* Azul para los titulos */
+    color: #ffffff;
+    border: 1px solid #000000;      /* Linea negra de borde */
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-productos td {
+    border: 1px solid #000000;      /* Celda con borde negro simple */
+    padding: 8px;
+}
+
+/* Filas de colores intercalados para que se lea mejor */
+.tabla-productos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 7. FORMULARIO DE CARGA DE GESTION.HTML */
+.formulario-carga {
+    background-color: #f9f9f9;
+    border: 1px solid #000000;
+    padding: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.grupo-campo {
+    margin-bottom: 12px;
+}
+
+.grupo-campo label {
+    display: block;                 /* Muestra la etiqueta arriba del campo */
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.grupo-campo input, .grupo-campo select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #000000;
+    box-sizing: border-box;         /* Corrige el ancho para que no se pase */
+}
+
+/* Boton de guardado */
+.boton-guardar {
+    background-color: #28a745;      /* Boton de color verde */
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-guardar:hover {
+    background-color: #218838;      /* Verde oscuro al pasar el cursor */
+}
+
+/* 8. SECCION DE DEUDORES (Flexbox basico) */
+.grupo-deudores {
+    display: flex;                  /* Para poner las cajas una al lado de otra */
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tarjeta-deudora {
+    flex: 1;
+    background-color: #ffcccc;      /* Fondo rojo clarito de deuda */
+    border: 1px solid #ff0000;      /* Borde rojo de advertencia */
+    padding: 12px;
+}
+
+.tarjeta-deudora h3 {
+    margin-top: 0;
+    color: #990000;
+}
+
+.deuda-monto {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #990000;
+}
+
+/* 9. PIE DE PAGINA (FOOTER) */
+.pie-sitio {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-top: 2px solid #000000;
+}
