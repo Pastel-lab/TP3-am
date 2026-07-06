@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multirubro El Progreso - Gestion de Stock</title>
+    <link class="stylesheet" href="styles.css">
+    <!-- Vinculamos el CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera principal -->
+    <header class="cabecera-sitio">
+        <img src="logo.png" 
+             alt="Logotipo de Multirubro El Progreso" 
+             title="Logo del comercio" 
+             style="border: 1px solid #ffffff; background-color: #ffffff; padding: 2px; width: 50px; height: 50px; vertical-align: middle; margin-right: 10px;">
+        <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Multirubro El Progreso</h1>
+    </header>
+
+    <!-- Menu con la pestaña actual marcada -->
+    <nav class="menu-sitio">
+        <a href="index.html">Inicio</a>
+        <a class="pagina-actual" href="gestion.html">Gestion de Stock</a>
+        <a href="ventas.html">Registro de Ventas</a>
+    </nav>
+
+    <!-- Seccion con el formulario requerido -->
+    <main class="contenido-sitio">
+        <h2 class="titulo-principal">Cargar un Nuevo Producto</h2>
+        
+        <!-- Formulario solicitado por el profesor -->
+        <form class="formulario-carga" action="#" method="GET">
+            <div class="grupo-campo">
+                <label for="campo-nombre">Nombre del Articulo:</label>
+                <input type="text" id="campo-nombre" name="nombre" placeholder="Ejemplo: Goma escolar blanca" required>
+            </div>
+            
+            <div class="grupo-campo">
+                <label for="campo-rubro">Rubro correspondiente:</label>
+                <select id="campo-rubro" name="rubro" required>
+                    <option value="" disabled selected>-- Seleccionar --</option>
+                    <option value="Kiosco">Kiosco</option>
+                    <option value="Libreria">Libreria</option>
+                    <option value="Regaleria">Regaleria</option>
+                </select>
+            </div>
+            
+            <div class="grupo-campo">
+                <label for="campo-precio">Precio Unitario ($):</label>
+                <input type="number" id="campo-precio" name="precio" placeholder="100" min="1" required>
+            </div>
+            
+            <div class="grupo-campo">
+                <label for="campo-stock">Stock Inicial (unidades):</label>
+                <input type="number" id="campo-stock" name="stock" placeholder="5" min="1" required>
+            </div>
+            
+            <!-- Boton simple para guardar con hover definido en el CSS -->
+            <button type="submit" class="boton-guardar">Guardar Producto</button>
+        </form>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="pie-sitio">
+        <p>Copyright 2026 Multirubro El Progreso - Hecho para Laboratorio de Programacion - 6 G</p>
+    </footer>
+
+</body>
+</html>
